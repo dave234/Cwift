@@ -28,6 +28,7 @@
 #define CWIFT_ENUM __attribute__((enum_extensibility(open)))
 #define CWIFT_NAME(_name) __attribute__((swift_name(#_name)))
 #define CWIFT_TYPE __attribute((swift_newtype(struct)))
+#define CWIFT_OPTIONS __attribute__((flag_enum,enum_extensibility(open)))
 #define CWIFT_BOOL BOOL
 
 #else 
@@ -37,6 +38,7 @@
 #define CWIFT_ENUM
 #define CWIFT_NAME(_name)
 #define CWIFT_TYPE
+#define CWIFT_OPTIONS
 #define CWIFT_BOOL signed char
 
 #endif 
