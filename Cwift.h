@@ -29,7 +29,7 @@
 #define CWIFT_NAME(_name) __attribute__((swift_name(#_name)))
 #define CWIFT_BOOL BOOL
 
-#else // !def __OBJC__
+#else 
 
 //////////// Expand to nothing if ndef ObjC or Swift /////////////
 
@@ -37,6 +37,6 @@
 #define CWIFT_NAME(_name)
 #define CWIFT_BOOL signed char
 
-#endif // __OBJC__
+#endif 
 
 #endif // Cwift_h
