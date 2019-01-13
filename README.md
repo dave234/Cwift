@@ -2,6 +2,8 @@
 
 ### Conditional clang attributes used for C-Swift interoperability. 
 
+Example project [here](https://github.com/dave234/CwiftDemo)
+
 Macros for using Clang's Swift attributes for cross platform headers, will expand to nothing on non-Apple platforms.
 
 Copyright (C) 2019 David O'Neill
