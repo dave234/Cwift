@@ -7,7 +7,7 @@ Example project [here](https://github.com/dave234/CwiftDemo)
 
 ## How to use:
 
-Cwift's intent is to be able to take advantage of clang's swift specific attributes without having to import Foundation. One common use case is when you want to use an enum in both your C++ code and in your Swift code. You cannot use NS_ENUM in your non-apple code, as there is no way to import Foundation. Cwift allows you to get the same benefit of using NS_ENUM, and you can still include the enum in your non-apple code bases.
+Cwift's intent is to be able to take advantage of clang's swift specific attributes without having to import Foundation. One common use case is when you want to use an enum in both your C++ code and in your Swift code. You cannot use NS_ENUM in your non-apple code, as there is no way to import Foundation. Cwift allows you to get the same benefit of using NS_ENUM, and you can still include the enum in your non-apple code base.
 
 ```
 // MyCFile.h
@@ -19,7 +19,7 @@ typedef enum CWIFT_ENUM Region {
 } Region;
 ```
 
-In C++, `CWIFT_ENUM` will not expand to anything, making it a normal enum. However, when this is imported to Swift, you will be able to use the dot syntax.
+In C++, `CWIFT_ENUM` will not expand to anything, making it a normal enum. However, when this is imported to Swift, you will be able to use dot syntax.
 
 ```
 ///////////////// MySwiftFile.swift /////////////////
@@ -36,7 +36,7 @@ typedef enum CWIFT_OPTIONS Characteristic {
 } Characteristic;
 
 ```
-PersonAttribute is a normal bit mask in C/C++, but is imported into Swift as an option set.
+Characteristic is a normal bit mask in C/C++, but is imported into Swift as an option set.
 ```
 ///////////////// MySwiftFile.swift /////////////////
 var characteristics: Characteristic = [.smart, .funny]
