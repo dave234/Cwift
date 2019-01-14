@@ -66,10 +66,10 @@ void    PersonSetAge(Person person, int age)    CWIFT_NAME(setter:Person.age(sel
 ///////////////// MyCFile.c /////////////////
 
 // In C/C++ Person is a void *, cast to and from in the C wrappers.
-Person PersonCreate(int age, Region region) { return
-    (Person) new census_model::person {
-    .age = age,
-    .region = region
+Person PersonCreate(int age, Region region) { 
+    return (Person) new census_model::person {
+        .age = age,
+        .region = region
     };
 }
 
