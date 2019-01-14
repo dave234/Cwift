@@ -53,14 +53,16 @@ public:
     int age;
     Region region;
 };
-
+```
+```
 ///////////////// MyCFile.h /////////////////
 
 typedef void * Person CWIFT_TYPE; // Person is imported into Swift as a discrete type.
 Person  PersonCreate(int age, Region region)    CWIFT_NAME(Person.init(age:region:));
 int     PersonGetAge(Person person)             CWIFT_NAME(getter:Person.age(self:));
 void    PersonSetAge(Person person, int age)    CWIFT_NAME(setter:Person.age(self:newValue:));
-
+```
+```
 ///////////////// MyCFile.c /////////////////
 
 // In C/C++ Person is a void *, cast to and from in the C wrappers.
@@ -78,7 +80,8 @@ int PersonGetAge(Person person) {
 void PersonSetAge(Person person, int age) {
     ((census_model::person *)person)->age = age;
 }
-
+```
+```
 ///////////////// MySwiftFile.swift /////////////////
 
 // Without CWIFT_NAME, calling C code looks like this:
