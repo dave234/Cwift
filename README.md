@@ -85,10 +85,12 @@ void PersonSetAge(Person person, int age) {
 ///////////////// MySwiftFile.swift /////////////////
 
 // Without CWIFT_NAME, calling C code looks like this:
+
 guard var person = PersonCreate(age: 20, region: .north) else { fatalError() }
 PersonSetAge(person, PersonGetAge(person) + 10)
 
 // With CWIFT_NAME, you can the use the Person type this way.
+
 guard var person = Person(age: 20, region: .north) else { fatalError() }
 person.age += 10
 ```
