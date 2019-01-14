@@ -48,11 +48,13 @@ One very useful attribute is swift_newtype(struct), which is conditionally added
 
 ```
 ///////////////// MyCppFile.hpp /////////////////
+namespace census_model {
 class person {
-public:
-    int age;
-    Region region;
-};
+    public:
+        int age;
+        Region region;
+    };
+}
 ```
 ```
 ///////////////// MyCFile.h /////////////////
