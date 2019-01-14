@@ -2,7 +2,10 @@
 
 ### Conditional clang attributes used for C-Swift interoperability. 
 
-Macros for using Clang's Swift attributes for cross platform headers, will expand to nothing on non-Apple platforms.
+Macros for using Clang's Swift attributes for cross platform headers, will expand to nothing on non-Apple platforms. 
+
+Install with Cocoapods using `pod 'Cwift'`.
+
 Example project [here](https://github.com/dave234/CwiftDemo)
 
 ## How to use:
