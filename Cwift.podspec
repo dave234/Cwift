@@ -5,16 +5,17 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 END
 
 Pod::Spec.new do |s|
-  s.name               = "Cwift"
-  s.version            = '0.5'
-  s.summary            = 'Conditional clang attributes used for C-Swift interoperability.'
-  s.homepage           = 'https://github.com/dave234/Cwift'
-  s.authors            = { "Dave O'Neill" => 'daveoneill234@gmail.com' }
-  s.license            = { :type => 'MIT', :text => license }
-  s.source             = { :git => 'https://github.com/dave234/Cwift.git', :tag => 'dev-0.5' }
-  s.source_files       = '*.{c,h}'
-  s.requires_arc       = false
-  s.ios.deployment_target = '7.0'
-  s.osx.deployment_target = '10.8'
-  s.tvos.deployment_target = '9.0'
+  s.name                    = "Cwift"
+  s.version                 = '0.5'
+  s.summary                 = 'Conditional clang attributes used for C-Swift interoperability.'
+  s.homepage                = 'https://github.com/dave234/Cwift'
+  s.authors                 = { "Dave O'Neill" => 'daveoneill234@gmail.com' }
+  s.license                 = { :type => 'MIT', :text => license }
+  s.source                  = { :git => 'https://github.com/dave234/Cwift.git', :tag => '0.5' }
+  s.source_files            = '*.{c,h}'
+  s.public_header_files     = 'Cwift.h'
+  s.requires_arc            = false
+  s.ios.deployment_target   = '7.0'
+  s.osx.deployment_target   = '10.8'
+  s.tvos.deployment_target  = '9.0'
 end
