@@ -6,14 +6,13 @@ END
 
 Pod::Spec.new do |s|
   s.name               = "Cwift"
-  s.version            = '0.4'
+  s.version            = '0.5'
   s.summary            = 'Conditional clang attributes used for C-Swift interoperability.'
   s.homepage           = 'https://github.com/dave234/Cwift'
   s.authors            = { "Dave O'Neill" => 'daveoneill234@gmail.com' }
   s.license            = { :type => 'MIT', :text => license }
-  s.source             = { :git => 'https://github.com/dave234/Cwift.git', :tag => '0.4' }
-  s.source_files       = 'Cwift.h'
-  s.public_header_files = 'Cwift.h'
+  s.source             = { :git => 'https://github.com/dave234/Cwift.git', :tag => 'dev-0.5' }
+  s.source_files       = '*.{c,h}'
   s.requires_arc       = false
   s.ios.deployment_target = '7.0'
   s.osx.deployment_target = '10.8'
