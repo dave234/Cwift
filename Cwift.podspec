@@ -6,7 +6,7 @@ END
 
 Pod::Spec.new do |s|
   s.name                    = "Cwift"
-  s.version                 = '0.5'
+  s.version                 = '0.5.1'
   s.summary                 = 'Conditional clang attributes used for C-Swift interoperability.'
   s.homepage                = 'https://github.com/dave234/Cwift'
   s.authors                 = { "Dave O'Neill" => 'daveoneill234@gmail.com' }
@@ -18,4 +18,5 @@ Pod::Spec.new do |s|
   s.ios.deployment_target   = '7.0'
   s.osx.deployment_target   = '10.8'
   s.tvos.deployment_target  = '9.0'
+  s.pod_target_xcconfig     = { 'DEFINES_MODULE' => 'YES' }
 end
