@@ -11,7 +11,7 @@ Pod::Spec.new do |s|
   s.homepage                = 'https://github.com/dave234/Cwift'
   s.authors                 = { "Dave O'Neill" => 'daveoneill234@gmail.com' }
   s.license                 = { :type => 'MIT', :text => license }
-  s.source                  = { :git => 'https://github.com/dave234/Cwift.git', :tag => '0.5' }
+  s.source                  = { :git => 'https://github.com/dave234/Cwift.git', :tag => s.version.to_s }
   s.source_files            = '*.{c,h}'
   s.public_header_files     = 'Cwift.h'
   s.requires_arc            = false
